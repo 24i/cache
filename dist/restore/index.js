@@ -5231,7 +5231,6 @@ function extractTar(archivePath, compressionMethod) {
             }
         }
         const args = [
-            ...getCompressionProgram(),
             '-xf',
             archivePath.replace(new RegExp(`\\${path.sep}`, 'g'), '/'),
             '-P',

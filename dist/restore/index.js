@@ -5263,7 +5263,6 @@ function createTar(archiveFolder, sourceDirectories, compressionMethod) {
             }
         }
         const args = [
-            ...getCompressionProgram(),
             '-cf',
             cacheFileName.replace(new RegExp(`\\${path.sep}`, 'g'), '/'),
             '-P',
